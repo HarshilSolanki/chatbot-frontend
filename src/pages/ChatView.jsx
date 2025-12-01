@@ -6,7 +6,7 @@ import MessageBubble from '../components/MessageBubble';
 import TypingIndicator from '../components/TypingIndicator';
 import { useAuthStore } from '../store/authStore';
 
-const WS_URL = import.meta.env.VITE_WS_URL || 'http://localhost:3000';
+const WS_URL = import.meta.env.VITE_WS_URL || 'http://localhost:4000';
 
 function ChatView() {
   const { sessionId } = useParams();

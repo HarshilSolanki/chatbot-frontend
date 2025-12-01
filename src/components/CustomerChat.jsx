@@ -5,7 +5,7 @@ import ChatWindow from './ChatWindow';
 import { useChatStore } from '../store/chatStore';
 import api from '../services/api';
 
-const WS_URL = import.meta.env.VITE_WS_URL || 'http://localhost:3000';
+const WS_URL = import.meta.env.VITE_WS_URL || 'http://localhost:4000';
 
 function CustomerChat() {
   const [isOpen, setIsOpen] = useState(false);

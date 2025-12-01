@@ -2,7 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
 import ChatList from './pages/ChatList';
 import ChatView from './pages/ChatView';
-import CustomerChat from './components/CustomerChat';
+import Landing from './pages/Landing';
 import { useAuthStore } from './store/authStore';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
           path="/admin/chat/:sessionId"
           element={token ? <ChatView /> : <Navigate to="/login" />}
         />
-        <Route path="/" element={<CustomerChat />} />
+        <Route path="/" element={<Landing />} />
       </Routes>
     </div>
   );
